@@ -1,0 +1,56 @@
+#version 300 es
+precision highp float;
+
+in vec2 v_texcoord;        // Texture coordinates
+uniform sampler2D tex;     // Input texture
+out vec4 fragColor;        // Output pixel color
+
+// ------------------- SETTINGS -------------------
+
+// Saturation / vibrance: 0.0 = no change, 1.0 = full vibrance
+const float Strength = 0.6;
+
+// Contrast: 1.0 = neutral, >1.0 = stronger contrast, <1.0 = weaker
+const float Contrast = 1.0;
+
+// Brightness: 0.0 = neutral, positive = brighter, negative = darker
+const float Brightness = 0.0;
+
+// Per-channel multipliers (R,G,B), usually 1.0 for all
+// Here, red is reduced, green/blue normal — adjust for taste
+//const vec3 Balance = vec3(0.5, 0.5, 0.5);
+const vec3 Balance = vec3(0.4, 0.7, 0.7);
+
+// ------------------- SHADER -------------------
+
+void main() {
+    // Sample the original pixel color
+    vec4 pixColor = texture(tex, v_texcoord);
+    vec3 color = pixColor.rgb;
+
+    // Compute luma (perceptual grayscale)
+    vec3 coefLuma = vec3(0.212656, 0.715158, 0.072186);
+    float luma = dot(coefLuma, color);
+
+    // Compute vibrance factor
+    float max_color = max(color.r, max(color.g, color.b));
+    float min_color = min(color.r, min(color.g, color.b));
+    float color_saturation = max_color - min_color;
+
+    // Blend factor for each channel
+    vec3 vib = (sign(-Strength) * color_saturation - 1.0) * (Balance * -Strength) + 1.0;
+
+    // Apply vibrance
+    vec3 adjustedColor = mix(vec3(luma), color, vib);
+
+    // Apply contrast around mid-gray
+    adjustedColor = ((adjustedColor - 0.5) * Contrast) + 0.5;
+
+    // Apply brightness offset
+    adjustedColor += vec3(Brightness);
+
+    // Clamp final color to [0,1]
+    adjustedColor = clamp(adjustedColor, 0.0, 1.0);
+
+    fragColor = vec4(adjustedColor, pixColor.a);
+}
