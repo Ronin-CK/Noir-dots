@@ -1,6 +1,5 @@
 # Noir-dots
 
-## Credits & Inspiration
 
 ## Credits
 
