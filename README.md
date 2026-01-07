@@ -2,14 +2,12 @@
 
 ## Credits & Inspiration
 
-This configuration is a personal Hyprland setup built by combining and modifying ideas from the following projects:
+## Credits
 
-- **Nocturnal-Shell**
-  - Visual style, Waybar layout, shell theming
-  - Original project: https://github.com/USER/Nocturnal-Shell
+This repository is a personal configuration inspired by and adapted from:
 
-- **end-4 dotfiles**
-  - Hyprland structure, keybind logic, scripting patterns
-  - Original project: https://github.com/end-4/dots-hyprland
+- [Nocturnal-Shell](https://github.com/noctalia-dev/noctalia-shell)
+- [end-4 dotfiles](https://github.com/end-4/dots-hyprland)
 
-All configurations have been heavily modified to fit my workflow.
+All configurations have been modified for personal use.
+This repository is not affiliated with the original authors.
