@@ -13,14 +13,3 @@ This configuration is a personal Hyprland setup built by combining and modifying
   - Original project: https://github.com/end-4/dots-hyprland
 
 All configurations have been heavily modified to fit my workflow.
-
-LICENSE:
-MIT License
-
-Copyright (c) 2026 YOUR_NAME
-
-This project includes configuration ideas and adapted code from:
-- Nocturnal-Shell
-- end-4 dotfiles
-
-See README for full attribution.
