@@ -620,9 +620,10 @@ Singleton {
       folder: "file://" + currentDirectory
       nameFilters: ImageCacheService.imageFilters
       showDirs: false
+//-----------------Newest wallpapers appear at the top--------------------------------------------------------------------------
       sortField: FolderListModel.Time
       sortReversed: false
-
+//-------------------------------------------------------------------------------------------
       // Watch for directory changes via property binding
       onCurrentDirectoryChanged: {
         folder = "file://" + currentDirectory;
