@@ -31,7 +31,7 @@ The included `install.sh` script automates the entire process. It will:
 
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/Ronin-CK/Noir-dots.git](https://github.com/Ronin-CK/Noir-dots.git)
+git clone https://github.com/Ronin-CK/Noir-dots.git
 cd Noir-dots
 ```
 
@@ -40,6 +40,10 @@ cd Noir-dots
 chmod +x install.sh
 ./install.sh
 ```
+Once the script finishes:
+
+  - Reboot your system.
+  - Select Hyprland from your login manager (if not already selected).
 
 ## Credits
 
