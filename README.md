@@ -44,6 +44,25 @@ Once the script finishes:
 
   - Reboot your system.
   - Select Hyprland from your login manager (if not already selected).
+---
+## Troubleshooting theme not updating
+
+### Kitty terminal not updating colors
+If Kitty does not reflect the current Material / Noctalia color scheme, it is usually caused by legacy terminal escape sequences overriding Kitty’s native theming.
+
+To fix this, remove the generated escape sequence file:
+
+```bash
+rm ~/.local/state/quickshell/user/generated/terminal/sequences.txt
+```
+
+## KDE / Plasma apps not updating colors
+If KDE applications do not automatically pick up the Material / Noctalia color scheme, force Plasma to reload the colorscheme:
+```bash
+plasma-apply-colorscheme BreezeDark
+plasma-apply-colorscheme noctalia
+```
+put this command in noctalia UI setting->hooks->Wallpaper changed 'Command to be executed when wallpaper changes.'
 
 ## Credits
 
