@@ -1,0 +1,212 @@
+{
+  "cheatsheetData": [
+    {
+      "title": "Shell & System",
+      "binds": [
+        {
+          "keys": "Super + F1",
+          "desc": "Show Cheatsheet"
+        },
+        {
+          "keys": "Super + TAB",
+          "desc": "Toggle overview"
+        },
+        {
+          "keys": "Super + A",
+          "desc": "Toggle Control Center"
+        },
+        {
+          "keys": "Super + B",
+          "desc": "Toggle Calendar"
+        },
+        {
+          "keys": "Super + K",
+          "desc": "Toggle On-Screen Keyboard"
+        },
+        {
+          "keys": "Super + J",
+          "desc": "Toggle Bar"
+        }
+      ]
+    },
+    {
+      "title": "Utilities",
+      "binds": [
+        {
+          "keys": "Super + Shift + C",
+          "desc": "Color Picker (Hex)"
+        },
+        {
+          "keys": "Super + Shift + R",
+          "desc": "Screen Recorder"
+        }
+      ]
+    },
+    {
+      "title": "Window Management",
+      "binds": [
+        {
+          "keys": "Super + MOUSE:272",
+          "desc": "Move Window (Mouse)"
+        },
+        {
+          "keys": "Super + MOUSE:273",
+          "desc": "Resize Window (Mouse)"
+        },
+        {
+          "keys": "Super + Q",
+          "desc": "Close Active Window"
+        },
+        {
+          "keys": "Super + Shift + Alt + Q",
+          "desc": "Force Kill Window"
+        },
+        {
+          "keys": "Super + Alt + SPACE",
+          "desc": "Toggle Float/Tile"
+        },
+        {
+          "keys": "Super + D",
+          "desc": "Maximize Window"
+        },
+        {
+          "keys": "Super + F",
+          "desc": "Toggle Fullscreen"
+        },
+        {
+          "keys": "Super + Alt + F",
+          "desc": "Fake Fullscreen"
+        },
+        {
+          "keys": "Super + P",
+          "desc": "Pin Window"
+        },
+        {
+          "keys": "Super + Alt + S",
+          "desc": "Send to Scratchpad"
+        }
+      ]
+    },
+    {
+      "title": "Workspaces",
+      "binds": [
+        {
+          "keys": "Super + Ctrl + RIGHT",
+          "desc": "Next Workspace"
+        },
+        {
+          "keys": "Super + Ctrl + LEFT",
+          "desc": "Previous Workspace"
+        },
+        {
+          "keys": "Super + MOUSE_UP",
+          "desc": "Next Workspace (Mouse)"
+        },
+        {
+          "keys": "Super + MOUSE_DOWN",
+          "desc": "Prev Workspace (Mouse)"
+        }
+      ]
+    },
+    {
+      "title": "Special Workspace",
+      "binds": [
+        {
+          "keys": "Super + S",
+          "desc": "Toggle Scratchpad"
+        }
+      ]
+    },
+    {
+      "title": "Session",
+      "binds": [
+        {
+          "keys": "Ctrl + Alt + DELETE",
+          "desc": "Session Menu"
+        }
+      ]
+    },
+    {
+      "title": "Applications",
+      "binds": [
+        {
+          "keys": "Super + RETURN",
+          "desc": "Terminal"
+        },
+        {
+          "keys": "Super + E",
+          "desc": "File Manager"
+        },
+        {
+          "keys": "Super + W",
+          "desc": "Browser"
+        },
+        {
+          "keys": "Super + C",
+          "desc": "Code Editor"
+        },
+        {
+          "keys": "Super + Shift + Ctrl + Alt + W",
+          "desc": "Office Suite"
+        },
+        {
+          "keys": "Super + X",
+          "desc": "Text Editor"
+        },
+        {
+          "keys": "Super + Ctrl + V",
+          "desc": "Volume Mixer"
+        },
+        {
+          "keys": "Shift + Ctrl + ESCAPE",
+          "desc": "Task Manager"
+        }
+      ]
+    },
+    {
+      "title": "Noctalia Shell",
+      "binds": [
+        {
+          "keys": "Super + V",
+          "desc": "Clipboard Manager"
+        },
+        {
+          "keys": "Super + SPACE",
+          "desc": "App Launcher"
+        },
+        {
+          "keys": "Super + PERIOD",
+          "desc": "Emoji Picker"
+        },
+        {
+          "keys": "Super + Ctrl + R",
+          "desc": "Reload Noctalia/Hypr"
+        },
+        {
+          "keys": "Super + Ctrl + T",
+          "desc": "Toggle Wallpaper"
+        },
+        {
+          "keys": "Super + Ctrl + Alt + T",
+          "desc": "Random Wallpaper"
+        },
+        {
+          "keys": "Super + I",
+          "desc": "Settings"
+        },
+        {
+          "keys": "Super + L",
+          "desc": "Lock Screen"
+        },
+        {
+          "keys": "Super + Shift + S",
+          "desc": "Screenshot"
+        },
+        {
+          "keys": "Super + Shift + T",
+          "desc": "OCR / Lens"
+        }
+      ]
+    }
+  ]
+}
